@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+    <addon id="plugin.program.xeev.editor.pro"
+           name="XEEV Playlist Editor Pro"
+           version="4.2.0"
+           provider-name="XEEV">
+
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+        </requires>
+
+        <!-- main UI -->
+        <extension point="xbmc.python.script" library="default.py"/>
+
+        <!-- background service -->
+        <extension point="xbmc.service" library="service.py" start="startup"/>
+
+        <extension point="xbmc.addon.metadata">
+            <summary>XEEV IPTV Manager</summary>
+            <description>Auto IPTV setup, smart sync, multi-profile support</description>
+            <platform>all</platform>
+        </extension>
+
+    </addon>
+
+</addons>
